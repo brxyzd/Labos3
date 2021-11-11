@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadraticEquation", "..\Lab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{AB1C114C-53D6-48E9-A84C-42EB6E736321}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionPanel", "FunctionPanel\FunctionPanel.csproj", "{6328B39B-C3B9-41BE-A7D6-2C4019AB4DB0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{AB1C114C-53D6-48E9-A84C-42EB6E736321}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB1C114C-53D6-48E9-A84C-42EB6E736321}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB1C114C-53D6-48E9-A84C-42EB6E736321}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6328B39B-C3B9-41BE-A7D6-2C4019AB4DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6328B39B-C3B9-41BE-A7D6-2C4019AB4DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6328B39B-C3B9-41BE-A7D6-2C4019AB4DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6328B39B-C3B9-41BE-A7D6-2C4019AB4DB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,6 +16,9 @@ namespace Vsite.Csharp.KvadratnaJednadzba.Gui
         public Action<int> MyFunction;
         private QuadraticEquation.QuadraticEquation quadraticEquation;
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+        public event EventHandler CoefficientChanged;
+        
         public ResultDisplay()
         {
             quadraticEquation = new QuadraticEquation.QuadraticEquation();
@@ -64,7 +67,10 @@ namespace Vsite.Csharp.KvadratnaJednadzba.Gui
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             FillResults();
-            MyFunction(0);
+            if (CoefficientChanged != null)
+            {
+                CoefficientChanged(this, EventArgs.Empty);
+            }
         }
     }
 }

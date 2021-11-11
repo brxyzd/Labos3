@@ -55,6 +55,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FunctionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ResultDisplay.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,10 +99,6 @@
     <ProjectReference Include="..\..\Labos2\KvadratnaJednadzba\KvadratnaJednadzba\QuadraticEquation.csproj">
       <Project>{c0aafadb-eea7-4ded-8ca0-ec2b0dcac8e5}</Project>
       <Name>QuadraticEquation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FunctionPanel\FunctionPanel.csproj">
-      <Project>{6328b39b-c3b9-41be-a7d6-2c4019ab4db0}</Project>
-      <Name>FunctionPanel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
