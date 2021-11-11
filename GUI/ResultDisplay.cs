@@ -15,7 +15,6 @@ namespace Vsite.Csharp.KvadratnaJednadzba.Gui
     {
         public Action<int> MyFunction;
         private QuadraticEquation.QuadraticEquation quadraticEquation;
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         public event EventHandler CoefficientChanged;
         
@@ -42,20 +41,13 @@ namespace Vsite.Csharp.KvadratnaJednadzba.Gui
         private void FillResults()
         {
             quadraticEquation.A = (double)this.numericUpDownA.Value;
-            log.Info($"A value is {quadraticEquation.A}");
             quadraticEquation.B = (double)this.numericUpDownB.Value;
-            log.Info($"B value is {quadraticEquation.B}");
             quadraticEquation.C = (double)this.numericUpDownC.Value;
-            log.Info($"C value is {quadraticEquation.C}");
 
             this.Discriminant.Text = quadraticEquation.Discriminant.ToString();
-            log.Info($"Discriminant value is {this.Discriminant.Text}");
             var roots = quadraticEquation.RootsComplex;
             this.textBoxRoots1.Text = roots[0].ToString();
             this.textBoxRoots2.Text = roots[1].ToString();
-            log.Info($"Root1 value is {roots[0]}");
-            log.Info($"Root2 value is {roots[1]}");
-
 
         }
 
